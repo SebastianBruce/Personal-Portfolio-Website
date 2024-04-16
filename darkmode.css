@@ -47,13 +47,13 @@ nav {
   font-size: 1.5rem;
 }
 
-a {
+.link {
   color: #ccc;
   text-decoration: none;
   text-decoration-color: white;
 }
 
-a:hover {
+.link:hover {
   color: #999;
   text-decoration: underline;
   text-underline-offset: 1rem;
@@ -387,6 +387,19 @@ article .icon {
   cursor: default;
 }
 
+.article-container article {
+  transition: transform 0.3s ease, box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+.article-container article:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+.article-container img:hover {
+  cursor: pointer;
+}
+
 /* PROJECTS SECTION */
 
 #projects {
@@ -412,6 +425,19 @@ article .icon {
 .project-btn {
   color: #ccc;
   border-color: #666;
+}
+
+.image-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.project-img {
+  max-width: 100%;
+  max-height: 100%;
+  border-radius: 2rem;
 }
 
 /* Add hover effect to make projects pop */

@@ -22,11 +22,12 @@ darkModeToggle.addEventListener("click", function() {
   document.getElementById("theme-style").setAttribute("href", newTheme);
 });
 
-
-
-
-
-
-
-
-
+// Initialize Swiper
+var testimonialSwiper = new Swiper('.testimonial-slider', {
+  slidesPerView: 'auto',
+  spaceBetween: 20, // Adjust spacing between slides
+  loop: true,
+  autoplay: {
+    delay: 5000, // Adjust autoplay delay (in milliseconds)
+  },
+});

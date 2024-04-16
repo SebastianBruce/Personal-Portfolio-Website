@@ -13,10 +13,10 @@
       <div class="logo">Sebastian Bruce</div>
       <div>
         <ul class="nav-links">
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
+          <li><a class = "link" href="#about">About</a></li>
+          <li><a class = "link" href="#experience">Experience</a></li>
+          <li><a class = "link" href="#projects">Projects</a></li>
+          <li><a class = "link" href="#contact">Contact</a></li>
           <li><button id="dark-mode-toggle">Toggle Dark Mode</button></li>
         </ul>
       </div>
@@ -30,10 +30,10 @@
           <span></span>
         </div>
         <div class="menu-links">
-          <li><a href="#about" onclick="toggleMenu()">About</a></li>
-          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
-          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
-          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+          <li><a class = "link" href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a class = "link" href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a class = "link" href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a class = "link" href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
     </nav>
@@ -61,13 +61,13 @@
             src="./assets/linkedin.png"
             alt="My LinkedIn profile"
             class="icon"
-            onclick="location.href='https://www.linkedin.com/in/sebastian-bruce/'"
+            onclick="window.open('https://www.linkedin.com/in/sebastian-bruce/', '_blank')"
           />
           <img
             src="./assets/github.png"
             alt="My Github profile"
             class="icon"
-            onclick="location.href='https://github.com/SebastianBruce'"
+            onclick="window.open('https://github.com/SebastianBruce', '_blank')"
           />
         </div>
       </div>
@@ -126,26 +126,27 @@
     <section id="experience">
       <p class="section__text__p1">Explore My</p>
       <h1 class="title">Experience</h1>
+      <p class="section__text__p1">Click each to see all of my projects using them!</p>
       <div class="experience-details-container">
         <div class="about-containers">
           <div class="details-container">
             <h2 class="experience-sub-title">Backend Development</h2>
             <div class="article-container">
-              <article>
-                <img
-                  src="./assets/Python_logo_51.svg.png"
-                  alt="Experience icon"
-                  class="icon"
-                />
-                <div>
-                  <h3>Python</h3>
-                  <p>Experienced</p>
-                </div>
-              </article>
-              <article>
+                <article onclick="window.open('https://github.com/SebastianBruce?tab=repositories&q=&type=&language=python&sort=', '_blank')">
+                  <img
+                    src="./assets/Python_logo_51.svg.png"
+                    alt="Python logo"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Python</h3>
+                    <p>Experienced</p>
+                  </div>
+                </article>
+                <article onclick="window.open('https://github.com/SebastianBruce?tab=repositories&q=&type=&language=sql&sort=', '_blank')">
                 <img
                   src="./assets/pngimg.com - mysql_PNG9.png"
-                  alt="Experience icon"
+                  alt="MySQL logo"
                   class="icon"
                 />
                 <div>
@@ -153,10 +154,10 @@
                   <p>Intermediate</p>
                 </div>
               </article>
-              <article>
+              <article onclick="window.open('https://github.com/SebastianBruce?tab=repositories&q=&type=&language=java&sort=', '_blank')">
                 <img
                   src="./assets/java-logo.png"
-                  alt="Experience icon"
+                  alt="Java logo"
                   class="icon"
                 />
                 <div>
@@ -164,10 +165,10 @@
                   <p>Intermediate</p>
                 </div>
               </article>
-              <article>
+              <article onclick="window.open('https://github.com/SebastianBruce?tab=repositories&q=&type=&language=php&sort=', '_blank')">
                 <img
                   src="./assets/PHP-logo.svg.png"
-                  alt="Experience icon"
+                  alt="PHP logo"
                   class="icon"
                 />
                 <div>
@@ -175,10 +176,10 @@
                   <p>Basic</p>
                 </div>
               </article>
-              <article>
+              <article onclick="window.open('https://github.com/SebastianBruce?tab=repositories&q=&type=&language=c%23&sort=', '_blank')">
                 <img
                   src="./assets/c-sharp-800x800.png"
-                  alt="Experience icon"
+                  alt="c-sharp logo"
                   class="icon"
                 />
                 <div>
@@ -186,10 +187,10 @@
                   <p>Basic</p>
                 </div>
               </article>
-              <article>
+              <article onclick="window.open('https://github.com/SebastianBruce?tab=repositories&q=&type=&language=javascript&sort=', '_blank')">
                 <img
                   src="./assets/javascript-logo-8892AEFCAC-seeklogo.com.png"
-                  alt="Experience icon"
+                  alt="javascript logo"
                   class="icon"
                 />
                 <div>
@@ -202,10 +203,10 @@
           <div class="details-container">
             <h2 class="experience-sub-title">Frontend Development</h2>
             <div class="article-container">
-              <article>
+              <article onclick="window.open('https://github.com/SebastianBruce?tab=repositories&q=&type=&language=html&sort=', '_blank')">
                 <img
                   src="./assets/html.png"
-                  alt="Experience icon"
+                  alt="html logo"
                   class="icon"
                 />
                 <div>
@@ -213,10 +214,10 @@
                   <p>Intermediate</p>
                 </div>
               </article>
-              <article>
+              <article onclick="window.open('https://github.com/SebastianBruce?tab=repositories&q=&type=&language=css&sort=', '_blank')">
                 <img
                   src="./assets/CSS3_logo.svg.png"
-                  alt="Experience icon"
+                  alt="css logo"
                   class="icon"
                 />
                 <div>
@@ -224,10 +225,10 @@
                   <p>Intermediate</p>
                 </div>
               </article>
-              <article>
+              <article onclick="window.open('https://github.com/SebastianBruce?tab=repositories&q=&type=&language=javascript&sort=', '_blank')">
                 <img
                   src="./assets/javascript-logo-8892AEFCAC-seeklogo.com.png"
-                  alt="Experience icon"
+                  alt="javascript logo"
                   class="icon"
                 />
                 <div>
@@ -253,23 +254,25 @@
         <div class="about-containers">
           <div class="details-container color-container">
             <div class="article-container">
-              <img
-                src="./assets/project-1.png"
-                alt="Project 1"
-                class="project-img"
-              />
+              <div class="image-container">
+                <img
+                  src="./assets/depositphotos_425743018-stock-illustration-vector-illustration-businessman-character-checking.jpg"
+                  alt="Project 1"
+                  class="project-img"
+                />
+              </div>
             </div>
             <h2 class="experience-sub-title project-title">Syllabus Analysis</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="window.open('https://github.com/', '_blank')"
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="window.open('https://github.com/', '_blank')"
               >
                 Live Demo
               </button>
@@ -277,23 +280,25 @@
           </div>
           <div class="details-container color-container">
             <div class="article-container">
-              <img
-                src="./assets/project-2.png"
-                alt="Project 2"
-                class="project-img"
-              />
+              <div class="image-container">
+                <img
+                  src="./assets/project-2.png"
+                  alt="Project 2"
+                  class="project-img"
+                />
+              </div>
             </div>
             <h2 class="experience-sub-title project-title">Price Scraper</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="window.open('https://github.com/', '_blank')"
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="window.open('https://github.com/', '_blank')"
               >
                 Live Demo
               </button>
@@ -301,23 +306,25 @@
           </div>
           <div class="details-container color-container">
             <div class="article-container">
-              <img
-                src="./assets/project-3.png"
-                alt="Project 3"
-                class="project-img"
-              />
+              <div class="image-container">
+                <img
+                  src="./assets/project-3.png"
+                  alt="Project 3"
+                  class="project-img"
+                />
+              </div>
             </div>
             <h2 class="experience-sub-title project-title">Mock Company Website</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="window.open('https://github.com/', '_blank')"
               >
                 Github
               </button>
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="location.href='https://github.com/'"
+                onclick="window.open('https://github.com/', '_blank')"
               >
                 Live Demo
               </button>
@@ -342,7 +349,7 @@
             alt="Email icon"
             class="icon contact-icon email-icon"
           />
-          <p><a href="mailto:sdbruce@proton.me">sdbruce@proton.me</a></p>
+          <p><a class = "link" href="mailto:sdbruce@proton.me">sdbruce@proton.me</a></p>
         </div>
         <div class="contact-info-container">
           <img
@@ -350,7 +357,7 @@
             alt="LinkedIn icon"
             class="icon contact-icon"
           />
-          <p><a href="https://www.linkedin.com/in/sebastian-bruce/">LinkedIn</a></p>
+          <p><a class = "link" href="https://www.linkedin.com/in/sebastian-bruce/" target="_blank">LinkedIn</a></p>
         </div>
       </div>
     </section>
@@ -358,10 +365,10 @@
       <nav>
         <div class="nav-links-container">
           <ul class="nav-links">
-            <li><a href="#about">About</a></li>
-            <li><a href="#experience">Experience</a></li>
-            <li><a href="#projects">Projects</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a class = "link" href="#about">About</a></li>
+            <li><a class = "link" href="#experience">Experience</a></li>
+            <li><a class = "link" href="#projects">Projects</a></li>
+            <li><a class = "link" href="#contact">Contact</a></li>
           </ul>
         </div>
       </nav>
