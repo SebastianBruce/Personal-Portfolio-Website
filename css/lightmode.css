@@ -373,7 +373,7 @@ article {
   }
 
   article {
-    flex-basis: calc(100% - 1.5rem);
+    flex-basis: calc(100%);
   }
 }
 
