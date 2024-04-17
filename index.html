@@ -5,10 +5,15 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio - Sebastian Bruce</title>
-    <link rel="stylesheet" href="darkmode.css" id="theme-style"/>
-    <link rel="stylesheet" href="mediaqueries.css" />
+    <link rel="stylesheet" href="css/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="css/darkmode.css" id="theme-style"/>
+    <link rel="stylesheet" href="css/mediaqueries.css" />
+    <link
+      href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css"
+      rel="stylesheet"
+    />
   </head>
-  <body>
+  <body id = "top">
     <nav id="desktop-nav">
       <div class="logo">Sebastian Bruce</div>
       <div>
@@ -16,6 +21,7 @@
           <li><a class = "link" href="#about">About</a></li>
           <li><a class = "link" href="#experience">Experience</a></li>
           <li><a class = "link" href="#projects">Projects</a></li>
+          <li><a class = "link" href="#references">References</a></li>
           <li><a class = "link" href="#contact">Contact</a></li>
           <li><button id="dark-mode-toggle">Toggle Dark Mode</button></li>
         </ul>
@@ -33,6 +39,7 @@
           <li><a class = "link" href="#about" onclick="toggleMenu()">About</a></li>
           <li><a class = "link" href="#experience" onclick="toggleMenu()">Experience</a></li>
           <li><a class = "link" href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a class = "link" href="#references" onclick="toggleMenu()">References</a></li>
           <li><a class = "link" href="#contact" onclick="toggleMenu()">Contact</a></li>
         </div>
       </div>
@@ -78,7 +85,7 @@
       <div class="section-container">
         <div class="section__pic-container">
           <img
-            src="./assets/about-pic.png"
+            src="./assets/about-pic.jpg"
             alt="Profile picture"
             class="about-pic"
           />
@@ -143,14 +150,14 @@
                     <p>Experienced</p>
                   </div>
                 </article>
-                <article onclick="window.open('https://github.com/SebastianBruce?tab=repositories&q=&type=&language=sql&sort=', '_blank')">
+                <article onclick="window.open('https://github.com/SebastianBruce?tab=repositories&q=sql&type=&language=&sort=', '_blank')">
                 <img
                   src="./assets/pngimg.com - mysql_PNG9.png"
                   alt="MySQL logo"
                   class="icon"
                 />
                 <div>
-                  <h3>MySQL</h3>
+                  <h3>SQL</h3>
                   <p>Intermediate</p>
                 </div>
               </article>
@@ -187,14 +194,14 @@
                   <p>Basic</p>
                 </div>
               </article>
-              <article onclick="window.open('https://github.com/SebastianBruce?tab=repositories&q=&type=&language=javascript&sort=', '_blank')">
+              <article onclick="window.open('https://github.com/SebastianBruce?tab=repositories&q=&type=&language=c%2B%2B&sort=', '_blank')">
                 <img
-                  src="./assets/javascript-logo-8892AEFCAC-seeklogo.com.png"
-                  alt="javascript logo"
+                  src="./assets/C++_logo.png"
+                  alt="c++ logo"
                   class="icon"
                 />
                 <div>
-                  <h3>Javascript</h3>
+                  <h3>C++</h3>
                   <p>Basic</p>
                 </div>
               </article>
@@ -266,7 +273,7 @@
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
-                onclick="window.open('https://github.com/', '_blank')"
+                onclick="window.open('https://github.com/WilsonCruzz/Syllabus-Analysis', '_blank')"
               >
                 Github
               </button>
@@ -282,7 +289,7 @@
             <div class="article-container">
               <div class="image-container">
                 <img
-                  src="./assets/project-2.png"
+                  src="./assets/istockphoto-1464025733-612x612.jpg"
                   alt="Project 2"
                   class="project-img"
                 />
@@ -314,7 +321,7 @@
                 />
               </div>
             </div>
-            <h2 class="experience-sub-title project-title">Mock Company Website</h2>
+            <h2 class="experience-sub-title project-title">Placeholder</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
@@ -336,7 +343,72 @@
         src="./assets/arrow.png"
         alt="Arrow icon"
         class="icon arrow"
-        onclick="location.href='./#contact'"
+        onclick="location.href='./#references'"
+      />
+    </section>
+    <section id="references">
+      <p class="section__text__p1">What do they think?</p>
+      <h1 class="title">References</h1>
+      <div class="testimonial mySwiper">
+        <div class="testi-content swiper-wrapper">
+          <div class="slide swiper-slide">
+            <img src="assets/img1.jpg" alt="" class="image" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+              saepe provident dolorem a quaerat quo error facere nihil deleniti
+              eligendi ipsum adipisci, fugit, architecto amet asperiores
+              doloremque deserunt eum nemo.
+            </p>
+
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+            <div class="details">
+              <span class="name">Marnie Lotter</span>
+              <span class="job">Web Developer</span>
+            </div>
+          </div>
+          <div class="slide swiper-slide">
+            <img src="assets/img2.jpg" alt="" class="image" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+              saepe provident dolorem a quaerat quo error facere nihil deleniti
+              eligendi ipsum adipisci, fugit, architecto amet asperiores
+              doloremque deserunt eum nemo.
+            </p>
+
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+            <div class="details">
+              <span class="name">Marnie Lotter</span>
+              <span class="job">Web Developer</span>
+            </div>
+          </div>
+          <div class="slide swiper-slide">
+            <img src="assets/img3.jpg" alt="" class="image" />
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+              saepe provident dolorem a quaerat quo error facere nihil deleniti
+              eligendi ipsum adipisci, fugit, architecto amet asperiores
+              doloremque deserunt eum nemo.
+            </p>
+
+            <i class="bx bxs-quote-alt-left quote-icon"></i>
+
+            <div class="details">
+              <span class="name">Marnie Lotter</span>
+              <span class="job">Web Developer</span>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next nav-btn"></div>
+        <div class="swiper-button-prev nav-btn"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+      <img
+      src="./assets/arrow.png"
+      alt="Arrow icon"
+      class="icon arrow"
+      onclick="location.href='./#contact'"
       />
     </section>
     <section id="contact">
@@ -368,12 +440,17 @@
             <li><a class = "link" href="#about">About</a></li>
             <li><a class = "link" href="#experience">Experience</a></li>
             <li><a class = "link" href="#projects">Projects</a></li>
+            <li><a class = "link" href="#references">References</a></li>
             <li><a class = "link" href="#contact">Contact</a></li>
           </ul>
+          <div class = "back-to-top">
+            <a class = "link" href="#top">Back To Top</a>
+          </div>
         </div>
       </nav>
       <p>Copyright &#169; 2023 Sebastian Bruce. All Rights Reserved.</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="js/swiper-bundle.min.js"></script>
+    <script src="js/script.js"></script>
   </body>
 </html>
