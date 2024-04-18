@@ -364,7 +364,7 @@ article {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  flex-basis: calc(33% - 2.5rem);
+  flex-basis: calc(27%);
 }
 
 /* Adjustments for smaller screens */
@@ -472,8 +472,8 @@ article .icon {
 }
 
 .testimonial .image {
-  height: 170px;
-  width: 170px;
+  height: 20vh;
+  width: auto;
   object-fit: cover;
   border-radius: 50%;
 }
@@ -516,20 +516,25 @@ article .icon {
   background-color: rgb(102, 102, 102);
   transition: 0.2s;
 }
+
 .nav-btn:hover {
   background-color: rgba(0, 0, 0, 0.2);
 }
+
 .nav-btn::after,
 .nav-btn::before {
   font-size: 20px;
   color: #fff;
 }
+
 .swiper-pagination-bullet {
   background-color: rgb(102, 102, 102)
 }
+
 .swiper-pagination-bullet-active {
   background-color: #ccc;
 }
+
 @media screen and (max-width: 768px) {
   .slide p {
     padding: 0 20px;
