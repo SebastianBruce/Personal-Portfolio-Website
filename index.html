@@ -45,6 +45,9 @@
         </div>
       </div>
     </nav>
+    <noscript>
+      <p>Please enable JavaScript to view this website properly.</p>
+    </noscript>
     <section id="profile">
       <div class="section__pic-container">
         <img class = "profile-pic" src="./assets/profile-pic.jpg" alt="Profile picture" />
@@ -54,32 +57,35 @@
         <h1 class="title">Sebastian Bruce</h1>
         <p class="section__text__p2">
           I'm a
-          <span class="title-text" data-wait="2000" data-words='["Coding Major", "Backend Developer", "Frontend Developer"]'></span>
+          <span class="title-text" data-wait="2000" data-words='["Coding Major", "Backend Developer", "Frontend Developer"]'>Coding Major</span>
         </p>
         <div class="btn-container">
-          <button
-            class="btn btn-color-2"
-            onclick="window.open('./assets/Co-Op Resume.pdf')"
-          >
-            Download CV
-          </button>
-          <button class="btn btn-color-1" onclick="location.href='./#contact'">
-            Contact Info
-          </button>
+          <a href="./assets/Co-Op Resume.pdf" target="_blank">
+            <button class="btn btn-color-2">
+              Download CV
+            </button>
+          </a>
+          <a href="#contact">
+            <button class="btn btn-color-1">
+              Contact Info
+            </button>
+          </a>
         </div>
         <div id="socials-container">
-          <img
-            src="./assets/linkedin.png"
-            alt="My LinkedIn profile"
-            class="icon"
-            onclick="window.open('https://www.linkedin.com/in/sebastian-bruce/', '_blank')"
-          />
-          <img
-            src="./assets/github.png"
-            alt="My Github profile"
-            class="icon"
-            onclick="window.open('https://github.com/SebastianBruce', '_blank')"
-          />
+          <a href="https://www.linkedin.com/in/sebastian-bruce/" target="_blank">
+            <img
+              src="./assets/linkedin.png"
+              alt="My LinkedIn profile"
+              class="icon"
+            />
+          </a>
+          <a href="https://github.com/SebastianBruce" target="_blank">
+            <img
+              src="./assets/github.png"
+              alt="My Github profile"
+              class="icon"
+            />
+          </a>
         </div>
       </div>
     </section>
@@ -143,109 +149,127 @@
           <div class="details-container">
             <h2 class="experience-sub-title">Backend Development</h2>
             <div class="article-container">
-                <article onclick="window.open('https://github.com/SebastianBruce?tab=repositories&q=&type=&language=python&sort=', '_blank')">
+                <article>
+                  <a href="https://github.com/SebastianBruce?tab=repositories&q=&type=&language=python&sort=" target="_blank">
+                    <img
+                      src="./assets/Python_logo_51.svg.png"
+                      alt="Python logo"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>Python</h3>
+                      <p>Experienced</p>
+                    </div>
+                  </a>
+                </article>
+                <article>
+                  <a href="https://github.com/SebastianBruce?tab=repositories&q=sql&type=&language=&sort=" target="_blank">
+                    <img
+                      src="./assets/pngimg.com - mysql_PNG9.png"
+                      alt="MySQL logo"
+                      class="icon"
+                    />
+                    <div>
+                      <h3>SQL</h3>
+                      <p>Intermediate</p>
+                    </div>
+                  </a>
+              </article>
+              <article>
+                <a href="https://github.com/SebastianBruce?tab=repositories&q=&type=&language=java&sort=" target="_blank">
                   <img
-                    src="./assets/Python_logo_51.svg.png"
-                    alt="Python logo"
+                    src="./assets/java-logo.png"
+                    alt="Java logo"
                     class="icon"
                   />
                   <div>
-                    <h3>Python</h3>
-                    <p>Experienced</p>
+                    <h3>Java</h3>
+                    <p>Intermediate</p>
                   </div>
-                </article>
-                <article onclick="window.open('https://github.com/SebastianBruce?tab=repositories&q=sql&type=&language=&sort=', '_blank')">
-                <img
-                  src="./assets/pngimg.com - mysql_PNG9.png"
-                  alt="MySQL logo"
-                  class="icon"
-                />
-                <div>
-                  <h3>SQL</h3>
-                  <p>Intermediate</p>
-                </div>
+                </a>
               </article>
-              <article onclick="window.open('https://github.com/SebastianBruce?tab=repositories&q=&type=&language=java&sort=', '_blank')">
-                <img
-                  src="./assets/java-logo.png"
-                  alt="Java logo"
-                  class="icon"
-                />
-                <div>
-                  <h3>Java</h3>
-                  <p>Intermediate</p>
-                </div>
+              <article>
+                <a href="https://github.com/SebastianBruce?tab=repositories&q=&type=&language=php&sort=" target="_blank">
+                  <img
+                    src="./assets/PHP-logo.svg.png"
+                    alt="PHP logo"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>PHP</h3>
+                    <p>Basic</p>
+                  </div>
+                </a>
               </article>
-              <article onclick="window.open('https://github.com/SebastianBruce?tab=repositories&q=&type=&language=php&sort=', '_blank')">
-                <img
-                  src="./assets/PHP-logo.svg.png"
-                  alt="PHP logo"
-                  class="icon"
-                />
-                <div>
-                  <h3>PHP</h3>
-                  <p>Basic</p>
-                </div>
+              <article>
+                <a href="https://github.com/SebastianBruce?tab=repositories&q=&type=&language=c%23&sort=" target="_blank">
+                  <img
+                    src="./assets/c-sharp-800x800.png"
+                    alt="c-sharp logo"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>C#</h3>
+                    <p>Basic</p>
+                  </div>
+                </a>
               </article>
-              <article onclick="window.open('https://github.com/SebastianBruce?tab=repositories&q=&type=&language=c%23&sort=', '_blank')">
-                <img
-                  src="./assets/c-sharp-800x800.png"
-                  alt="c-sharp logo"
-                  class="icon"
-                />
-                <div>
-                  <h3>C#</h3>
-                  <p>Basic</p>
-                </div>
-              </article>
-              <article onclick="window.open('https://github.com/SebastianBruce?tab=repositories&q=&type=&language=c%2B%2B&sort=', '_blank')">
-                <img
-                  src="./assets/C++_logo.png"
-                  alt="c++ logo"
-                  class="icon"
-                />
-                <div>
-                  <h3>C++</h3>
-                  <p>Basic</p>
-                </div>
+              <article>
+                <a href="https://github.com/SebastianBruce?tab=repositories&q=&type=&language=c%2B%2B&sort=" target="_blank">
+                  <img
+                    src="./assets/C++_logo.png"
+                    alt="c++ logo"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>C++</h3>
+                    <p>Basic</p>
+                  </div>
+                </a>
               </article>
             </div>
           </div>
           <div class="details-container">
             <h2 class="experience-sub-title">Frontend Development</h2>
             <div class="article-container">
-              <article onclick="window.open('https://github.com/SebastianBruce?tab=repositories&q=&type=&language=html&sort=', '_blank')">
-                <img
-                  src="./assets/html.png"
-                  alt="html logo"
-                  class="icon"
-                />
-                <div>
-                  <h3>HTML</h3>
-                  <p>Intermediate</p>
-                </div>
+              <article>
+                <a href="https://github.com/SebastianBruce?tab=repositories&q=&type=&language=html&sort=" target="_blank">
+                  <img
+                    src="./assets/html.png"
+                    alt="html logo"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>HTML</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </a>
               </article>
-              <article onclick="window.open('https://github.com/SebastianBruce?tab=repositories&q=&type=&language=css&sort=', '_blank')">
-                <img
-                  src="./assets/CSS3_logo.svg.png"
-                  alt="css logo"
-                  class="icon"
-                />
-                <div>
-                  <h3>CSS</h3>
-                  <p>Intermediate</p>
-                </div>
+              <article>
+                <a href="https://github.com/SebastianBruce?tab=repositories&q=&type=&language=css&sort=" target="_blank">
+                  <img
+                    src="./assets/CSS3_logo.svg.png"
+                    alt="css logo"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>CSS</h3>
+                    <p>Intermediate</p>
+                  </div>
+                </a>
               </article>
-              <article onclick="window.open('https://github.com/SebastianBruce?tab=repositories&q=&type=&language=javascript&sort=', '_blank')">
-                <img
-                  src="./assets/javascript-logo-8892AEFCAC-seeklogo.com.png"
-                  alt="javascript logo"
-                  class="icon"
-                />
-                <div>
-                  <h3>Javascript</h3>
-                  <p>Basic</p>
-                </div>
+              <article>
+                <a href="https://github.com/SebastianBruce?tab=repositories&q=&type=&language=javascript&sort=" target="_blank">
+                  <img
+                    src="./assets/javascript-logo-8892AEFCAC-seeklogo.com.png"
+                    alt="javascript logo"
+                    class="icon"
+                  />
+                  <div>
+                    <h3>Javascript</h3>
+                    <p>Basic</p>
+                  </div>
+                </a>
               </article>
             </div>
           </div>
@@ -275,18 +299,16 @@
             </div>
             <h2 class="experience-sub-title project-title">Syllabus Analysis</h2>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://github.com/WilsonCruzz/Syllabus-Analysis', '_blank')"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://github.com/', '_blank')"
-              >
-                Live Demo
-              </button>
+              <a href="https://github.com/WilsonCruzz/Syllabus-Analysis" target="_blank">
+                <button class="btn btn-color-2 project-btn">
+                  Github
+                </button>
+              </a>
+              <a href="https://github.com/" target="_blank">
+                <button class="btn btn-color-2 project-btn">
+                  Live Demo
+                </button>
+              </a>
             </div>
           </div>
           <div class="details-container color-container">
@@ -301,18 +323,16 @@
             </div>
             <h2 class="experience-sub-title project-title">Price Scraper</h2>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://github.com/', '_blank')"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://github.com/', '_blank')"
-              >
-                Live Demo
-              </button>
+              <a href="https://github.com/SebastianBruce/Web-Price-Scraper-COMP1112-Final" target="_blank">
+                <button class="btn btn-color-2 project-btn">
+                  Github
+                </button>
+              </a>
+              <a href="https://github.com/" target="_blank">
+                <button class="btn btn-color-2 project-btn">
+                  Live Demo
+                </button>
+              </a>
             </div>
           </div>
           <div class="details-container color-container">
@@ -327,18 +347,16 @@
             </div>
             <h2 class="experience-sub-title project-title">Placeholder</h2>
             <div class="btn-container">
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://github.com/', '_blank')"
-              >
-                Github
-              </button>
-              <button
-                class="btn btn-color-2 project-btn"
-                onclick="window.open('https://github.com/', '_blank')"
-              >
-                Live Demo
-              </button>
+              <a href="https://github.com/" target="_blank">
+                <button class="btn btn-color-2 project-btn">
+                  Github
+                </button>
+              </a>
+              <a href="https://github.com/" target="_blank">
+                <button class="btn btn-color-2 project-btn">
+                  Live Demo
+                </button>
+              </a>
             </div>
           </div>
         </div>

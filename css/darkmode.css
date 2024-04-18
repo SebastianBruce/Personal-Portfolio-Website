@@ -158,13 +158,20 @@ nav {
     border-radius: 20px;
     cursor: pointer;
     transition: background-color 0.3s, color 0.3s, border-color 0.3s;
-  }
-  
-  #dark-mode-toggle:hover {
-    background-color: #ccc;
-    color: #1a1a1a;
-    border-color: #ccc;
-  }
+}
+
+#dark-mode-toggle:hover {
+  background-color: #ccc;
+  color: #1a1a1a;
+  border-color: #ccc;
+}
+
+noscript p {
+  color: red;
+  font-size: 2rem;
+  display: flex;
+  justify-content: center;
+}
 
 /* SECTIONS */
 
@@ -364,6 +371,11 @@ section {
 
 #experience {
   position: relative;
+}
+
+.experience-details-container a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .experience-sub-title {

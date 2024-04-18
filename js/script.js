@@ -113,3 +113,9 @@ function init() {
   // Init TypeWriter
   new TypeWriter(txtElement, words, wait);
 }
+
+window.onload = function() {
+  if (!document.getElementById) {
+    alert("Please enable JavaScript to view this website properly.");
+  }
+};
