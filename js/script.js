@@ -102,6 +102,37 @@ class TypeWriter {
   }
 }
 
+function copyText() {
+  // Get the text content of the <p> element
+  var emailElement = document.getElementById("email");
+  var originalText = emailElement.textContent;
+
+  // Change the text content to "Copied!"
+  emailElement.textContent = "Copied to Clipboard!";
+
+  // Create a temporary textarea element
+  var textarea = document.createElement("textarea");
+  textarea.value = originalText;
+  textarea.style.position = "fixed";  // Prevent scrolling to bottom when appending fixed textarea
+  document.body.appendChild(textarea);
+
+  // Select the text inside the textarea
+  textarea.select();
+  textarea.setSelectionRange(0, 99999); // For mobile devices
+
+  // Copy the text inside the textarea
+  document.execCommand("copy");
+
+  // Remove the temporary textarea element
+  document.body.removeChild(textarea);
+
+  // Restore the original text content after 1 second
+  setTimeout(function() {
+    emailElement.textContent = originalText;
+  }, 1000);
+}
+
+
 // Init On DOM Load
 document.addEventListener("DOMContentLoaded", init);
 

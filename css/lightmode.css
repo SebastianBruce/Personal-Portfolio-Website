@@ -168,8 +168,8 @@ nav {
 /* SECTIONS */
 
 section {
-  padding-top: 4vh;
-  height: 96vh;
+  padding-top: 10vh;
+  height: 100vh;
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
@@ -633,6 +633,10 @@ article .icon {
   .contact-info-container {
     padding: 0.5rem;
   }
+}
+
+#email {
+  cursor: pointer;
 }
 
 /* Back to top link */

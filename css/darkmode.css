@@ -176,8 +176,8 @@ noscript p {
 /* SECTIONS */
 
 section {
-  padding-top: 4vh;
-  height: 96vh;
+  padding-top: 10vh;
+  height: 100vh;
   margin: 0 10rem;
   box-sizing: border-box;
   min-height: fit-content;
@@ -634,6 +634,10 @@ article .icon {
 
 .contact-info-container:hover {
   transform: scale(1.05);
+}
+
+#email {
+  cursor: pointer;
 }
 
 @media only screen and (max-width: 768px) {
